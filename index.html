@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Películas y Series</title>
+    <title>PelÃ­culas y Series</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="app-container">
         <header class="header">
-            <h1 id="section-title">Películas</h1>
+            <h1 id="section-title">PelÃ­culas</h1>
         </header>
 
-        <!-- Sección de Películas -->
+        <!-- SecciÃ³n de PelÃ­culas -->
         <main class="movies-grid" id="peliculas-section">
-            <div class="movie-item" onclick="showDetails('Alien', 'https://image.tmdb.org/t/p/original/nmobSVIq5AxINCsMlj4IU1ighl7.png', 'Alien es una película de ciencia ficción y horror, que presenta un futuro en el que la tripulación de una nave espacial se enfrenta a una criatura alienígena letal.', 'https://image.tmdb.org/t/p/original/nmobSVIq5AxINCsMlj4IU1ighl7.png')">
-                <img src="https://image.tmdb.org/t/p/original/nmobSVIq5AxINCsMlj4IU1ighl7.png" alt="Alien">
+            <div class="movie-item" onclick="showDetails('Alien', 'https://image.tmdb.org/t/p/original/8PYqGSd8MOm5ce8io4qNSAiSExW.jpg', 'Alien es una pelÃ­cula de ciencia ficciÃ³n y horror, que presenta un futuro en el que la tripulaciÃ³n de una nave espacial se enfrenta a una criatura alienÃ­gena letal.', 'https://image.tmdb.org/t/p/original/8PYqGSd8MOm5ce8io4qNSAiSExW.jpg')">
+                <img src="https://image.tmdb.org/t/p/original/8PYqGSd8MOm5ce8io4qNSAiSExW.jpg" alt="Alien">
                 <p>Alien</p>
             </div>
-            <div class="movie-item" onclick="showDetails('Deadpool', 'https://image.tmdb.org/t/p/original/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg', 'Deadpool es una película de superhéroes basada en el personaje de Marvel Comics, conocido por su humor y acción intensa.', 'https://image.tmdb.org/t/p/original/nmobSVIq5AxINCsMlj4IU1ighl7.png')">
+            <div class="movie-item" onclick="showDetails('Deadpool', 'https://image.tmdb.org/t/p/original/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg', 'Deadpool es una pelÃ­cula de superhÃ©roes basada en el personaje de Marvel Comics, conocido por su humor y acciÃ³n intensa.', 'https://image.tmdb.org/t/p/original/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg')">
                 <img src="https://image.tmdb.org/t/p/original/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Deadpool">
                 <p>Deadpool</p>
             </div>
-            <div class="movie-item" onclick="showDetails('Intensamente 2', 'https://image.tmdb.org/t/p/original/7zuxSpKdPDI6jgaQToIsNFBeWxD.jpg', 'Intensamente 2 es la secuela de la popular película animada que explora las emociones de una niña mientras crece.', 'https://image.tmdb.org/t/p/original/7zuxSpKdPDI6jgaQToIsNFBeWxD.jpg')">
+            <div class="movie-item" onclick="showDetails('Intensamente 2', 'https://image.tmdb.org/t/p/original/7zuxSpKdPDI6jgaQToIsNFBeWxD.jpg', 'Intensamente 2 es la secuela de la popular pelÃ­cula animada que explora las emociones de una niÃ±a mientras crece.', 'https://image.tmdb.org/t/p/original/7zuxSpKdPDI6jgaQToIsNFBeWxD.jpg')">
                 <img src="https://image.tmdb.org/t/p/original/7zuxSpKdPDI6jgaQToIsNFBeWxD.jpg" alt="Intensamente 2">
                 <p>Intensamente 2</p>
             </div>
-            <!-- Añadir más películas aquí -->
+            <!-- AÃ±adir mÃ¡s pelÃ­culas aquÃ­ -->
         </main>
 
-        <!-- Sección de Series (inicialmente oculta) -->
+        <!-- SecciÃ³n de Series (inicialmente oculta) -->
         <main class="movies-grid" id="series-section" style="display: none;">
             <div class="movie-item" onclick="showDetails('Rosario tijeras', 'https://image.tmdb.org/t/p/original/13JdedQwxn9hhTM3wFbZL12aFfU.jpg', 'Rosario Tijeras es una serie que cuenta la historia de una joven que lucha por sobrevivir en un mundo violento.', 'https://image.tmdb.org/t/p/original/13JdedQwxn9hhTM3wFbZL12aFfU.jpg')">
                 <img src="https://image.tmdb.org/t/p/original/13JdedQwxn9hhTM3wFbZL12aFfU.jpg" alt="Rosario tijeras">
@@ -39,10 +39,10 @@
                 <img src="https://image.tmdb.org/t/p/original/437jZdGXmYzyl9p4QtIFsm89rL5.jpg" alt="Full House">
                 <p>Full House</p>
             </div>
-            <!-- Añadir más series aquí -->
+            <!-- AÃ±adir mÃ¡s series aquÃ­ -->
         </main>
 
-        <!-- Sección de Detalles (inicialmente oculta) -->
+        <!-- SecciÃ³n de Detalles (inicialmente oculta) -->
         <section id="details-section" style="display: none;">
             <div class="details-content">
                 <img id="details-background" src="" alt="Background Image" class="background-image">
@@ -55,9 +55,9 @@
 
         <footer class="footer">
             <nav class="footer-nav">
-                <a href="#" class="active" onclick="showSection('peliculas')">Películas</a>
+                <a href="#" class="active" onclick="showSection('peliculas')">PelÃ­culas</a>
                 <a href="#" onclick="showSection('series')">Series</a>
-                <a href="#">Búsqueda</a>
+                <a href="#">BÃºsqueda</a>
             </nav>
         </footer>
     </div>
@@ -69,9 +69,9 @@
             document.getElementById('series-section').style.display = 'none';
             document.getElementById('details-section').style.display = 'none';
 
-            // Mostrar la sección seleccionada
+            // Mostrar la secciÃ³n seleccionada
             document.getElementById(section + '-section').style.display = 'grid';
-            document.getElementById('section-title').textContent = section === 'peliculas' ? 'Películas' : 'Series';
+            document.getElementById('section-title').textContent = section === 'peliculas' ? 'PelÃ­culas' : 'Series';
 
             // Actualizar la clase 'active' en el footer
             document.querySelectorAll('.footer-nav a').forEach(link => {
@@ -81,25 +81,23 @@
         }
 
         function showDetails(title, image, description, logo) {
-            // Ocultar las secciones de películas y series
+            // Ocultar las secciones de pelÃ­culas y series
             document.getElementById('peliculas-section').style.display = 'none';
             document.getElementById('series-section').style.display = 'none';
 
-            // Mostrar la sección de detalles
+            // Mostrar la secciÃ³n de detalles
             document.getElementById('details-section').style.display = 'block';
             document.getElementById('section-title').textContent = title;
 
-            // Rellenar la sección de detalles con la información proporcionada
+            // Rellenar la secciÃ³n de detalles con la informaciÃ³n proporcionada
             document.getElementById('details-background').src = image;
+            document.getElementById('details-logo').src = logo;
             document.getElementById('details-title').textContent = title;
             document.getElementById('details-description').textContent = description;
-            
-            // Establecer el logo si se proporciona
-            document.getElementById('details-logo').src = logo || ''; // Si no se pasa logo, dejar vacío
         }
 
         function backToMovies() {
-            // Volver a la sección de películas (por defecto)
+            // Volver a la secciÃ³n de pelÃ­culas (por defecto)
             showSection('peliculas');
         }
     </script>
